@@ -11,9 +11,9 @@ namespace FITChallenge.FileHandler
     {
         public static void WriteLogFile(Person person)
         {
-            string text = String.Format("Name: {0}, BirthDate: {1}, Tall: {2}, Age: {3}", person.name, person.birthDate, person.tall, person.AgeValidation().ToString()) ;
+            string text = String.Format("Name: {0}, BirthDate: {1}, Tall: {2}, Age: {3}\n", person.name, person.birthDate, person.tall, person.AgeValidation().ToString()) ;
 
-            File.WriteAllText("log.txt", text);
+            File.AppendAllText("log.txt", text);
         }
     }
 }
