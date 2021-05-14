@@ -21,12 +21,8 @@ namespace FITChallenge.Models
                 {
                     age = age - 1;
                 }
-                return age;
             }
-            else
-            {
-                return -1;
-            }
+            return age;
         }
     }
 }
